@@ -32,7 +32,7 @@ class JConfig {
 	var $ftp_root = '/httpdocs/';
 	var $dbtype = 'mysql';
 	var $host = 'localhost';
-	var $user = 'lwasite';
+	var $user = 'admin';
 	var $db = 'lwasite';
 	var $dbprefix = '';
 	var $mailer = 'mail';
@@ -47,7 +47,7 @@ class JConfig {
 	var $MetaTitle = '1';
 	var $lifetime = '15';
 	var $session_handler = 'database';
-	var $password = 'Hk4Ntalqr';
+	var $password = 'Rh677jfgf';
 	var $sitename = 'Land Warrior Skirmishing - Airsoft Site Edinburgh, Scotland';
 	var $MetaDesc = 'Land Warrior Skirmishing is a dedicated Airsoft site for regular member and corporate events in the Edinburgh area.';
 	var $MetaKeys = 'airsoft, land warrior, skirmish, site, edinburgh, scotland, milsim';
