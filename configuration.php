@@ -32,9 +32,9 @@ class JConfig {
 	var $ftp_root = '/httpdocs/';
 	var $dbtype = 'mysql';
 	var $host = 'localhost';
-	var $user = 'lwasite_lwasite';
-	var $db = 'lwasite_lwasite';
-	var $dbprefix = 'lwasite_';
+	var $user = 'lwasite';
+	var $db = 'lwasite';
+	var $dbprefix = '';
 	var $mailer = 'mail';
 	var $mailfrom = 'info@madcatdigital.co.uk';
 	var $fromname = 'Land Warrior Airsoft - Skirmish Site';
