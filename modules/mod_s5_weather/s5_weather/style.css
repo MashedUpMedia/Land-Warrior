@@ -1,0 +1,51 @@
+.s5weather_tl {
+	height:9px;
+	width:9px;
+	float:left;
+	background:url(../s5_weather/s5_weather_tl.jpg) no-repeat;	}
+
+.s5weather_tr {
+	height:9px;
+	width:9px;
+	float:right;
+	background:url(../s5_weather/s5_weather_tr.jpg) no-repeat;	}
+	
+.s5weather_middle {
+	height:9px;
+	width:100%;
+	background:url(../s5_weather/s5_weather_tmiddle.jpg) repeat-x;	}
+	
+	
+	.s5weather_rl {
+		width:100%;
+		background:url(../s5_weather/s5_weather_rm.jpg) repeat-y left;	}
+	
+	.s5weather_rr {
+		width:100%;
+		background:url(../s5_weather/s5_weather_rightm.jpg) repeat-y right;	}
+	
+	.s5weather_brep {
+		width:100%;
+		background:#FFFFFF url(../s5_weather/s5_weather_backrepeat.jpg) repeat-x bottom;	}
+		
+	.s5weather_padding {
+		padding-left:12px;}
+	
+.s5weather_bl {
+	height:9px;
+	width:9px;
+	float:left;
+	background:url(../s5_weather/s5_weather_bl.jpg) no-repeat;	}
+
+.s5weather_br {
+	height:9px;
+	width:9px;
+	float:right;
+	background:url(../s5_weather/s5_weather_br.jpg) no-repeat;	}
+	
+.s5weather_bmiddle {
+	height:9px;
+	padding-bottom:10px;
+	width:100%;
+	background:url(../s5_weather/s5_weather_bmiddle.jpg) repeat-x;	}
+

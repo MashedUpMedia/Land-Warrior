@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/module-install.dtd">
+<install version="1.5" type="module">
+	<name>JWeather</name>
+	<author><![CDATA[ Marco Neumann ]]></author>
+	<creationDate>Jan 2008</creationDate>
+	<copyright><![CDATA[ (C) 2008 Marco Neumann. All rights reserved. ]]></copyright>
+	<license>http://www.linfo.org/bsdlicense.html BSD</license>
+	<authorEmail>webcoder_at_binware_dot_org</authorEmail>
+	<authorURL>p0l0.binware.org</authorURL>
+	<version>0.2.0</version>
+	<description>Weather Plugin</description>
+	
+	<languages>
+		<language tag="en-GB">en-GB.mod_jweather.ini</language>
+		<language tag="de-DE">de-DE.mod_jweather.ini</language>
+		<language tag="es-ES">es-ES.mod_jweather.ini</language>
+		<language tag="pl-PL">pl-PL.mod_jweather.ini</language>
+		<language tag="nl-BE">nl-BE.mod_jweather.ini</language>
+		<language tag="nl-NL">nl-NL.mod_jweather.ini</language>
+	</languages>
+
+	<files>
+		<filename module="mod_jweather">mod_jweather.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<filename>tmpl/default.php</filename>
+		<filename>tmpl/index.html</filename>
+		<filename>tmpl/mod_jweather.css</filename>
+		<filename>tmpl/blank.gif</filename>
+		<!-- Icons -->
+		<filename>tmpl/icons/-.png</filename>
+		<filename>tmpl/icons/00.png</filename>
+		<filename>tmpl/icons/01.png</filename>
+		<filename>tmpl/icons/02.png</filename>
+		<filename>tmpl/icons/03.png</filename>
+		<filename>tmpl/icons/04.png</filename>
+		<filename>tmpl/icons/05.png</filename>
+		<filename>tmpl/icons/06.png</filename>
+		<filename>tmpl/icons/07.png</filename>
+		<filename>tmpl/icons/08.png</filename>
+		<filename>tmpl/icons/09.png</filename>
+		<filename>tmpl/icons/10.png</filename>
+		<filename>tmpl/icons/11.png</filename>
+		<filename>tmpl/icons/12.png</filename>
+		<filename>tmpl/icons/13.png</filename>
+		<filename>tmpl/icons/14.png</filename>
+		<filename>tmpl/icons/15.png</filename>
+		<filename>tmpl/icons/16.png</filename>
+		<filename>tmpl/icons/17.png</filename>
+		<filename>tmpl/icons/18.png</filename>
+		<filename>tmpl/icons/19.png</filename>
+		<filename>tmpl/icons/20.png</filename>
+		<filename>tmpl/icons/21.png</filename>
+		<filename>tmpl/icons/22.png</filename>
+		<filename>tmpl/icons/23.png</filename>
+		<filename>tmpl/icons/24.png</filename>
+		<filename>tmpl/icons/25.png</filename>
+		<filename>tmpl/icons/26.png</filename>
+		<filename>tmpl/icons/27.png</filename>
+		<filename>tmpl/icons/28.png</filename>
+		<filename>tmpl/icons/29.png</filename>
+		<filename>tmpl/icons/30.png</filename>
+		<filename>tmpl/icons/31.png</filename>
+		<filename>tmpl/icons/32.png</filename>
+		<filename>tmpl/icons/33.png</filename>
+		<filename>tmpl/icons/34.png</filename>
+		<filename>tmpl/icons/35.png</filename>
+		<filename>tmpl/icons/36.png</filename>
+		<filename>tmpl/icons/37.png</filename>
+		<filename>tmpl/icons/38.png</filename>
+		<filename>tmpl/icons/39.png</filename>
+		<filename>tmpl/icons/40.png</filename>
+		<filename>tmpl/icons/41.png</filename>
+		<filename>tmpl/icons/42.png</filename>
+		<filename>tmpl/icons/43.png</filename>
+		<filename>tmpl/icons/44.png</filename>
+		<filename>tmpl/icons/45.png</filename>
+		<filename>tmpl/icons/46.png</filename>
+		<filename>tmpl/icons/47.png</filename>
+		<filename>tmpl/icons/NA.png</filename>
+	</files>
+	<params>
+		<param name="measurement_system" type="radio" default="m" label="Measurement System" description="PARAMMEASUREMENTSYSTEM">
+			<option value="m">Metric</option>
+			<option value="s">US Standard</option>
+		</param>
+		<param name="icondir" type="text" default="icons" label="Icons Path" description="PARAMICONS" />
+		<param name="citycode" type="text" default="SPXX0061" label="City Code" description="PARAMCITYCODE" />
+		<param name="numdays" type="text" default="3" label="Number of forecast days" description="PARAMNUMDAYS" />
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="title" type="text" default="Weather for" label="Title" description="PARAMTITLE" />
+		<param name="desc" type="radio" default="0" label="Show locality name" description="PARAMDESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<param name="days" type="list" default="0" label="Show day names" description="PARAMDAY">
+			<option value="0">No</option>
+			<option value="short">Short Format</option>
+			<option value="long">Long Format</option>
+		</param>
+		<param name="icon" type="radio" default="0" label="Show icons for weather" description="PARAMICONS">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="temp" type="radio" default="0" label="Show temperature" description="PARAMTEMP">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="tempseparator" type="text" default="" label="Temparature separator" description="PARAMTEMPSEPARATOR" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<param name="forecast" type="radio" default="0" label="Show forecast information" description="PARAMFORECAST">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="sunrise" type="radio" default="0" label="Show sunrise time" description="PARAMSUNRISE">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="sunset" type="radio" default="0" label="Show sunset time" description="PARAMSUNSET">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="sunrise-sunset" type="radio" default="0" label="Show sunrise/sunset time" description="PARAMSUNRISESUNSET">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="vis" type="radio" default="0" label="Show Visibility" description="PARAMVIS">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="wind" type="radio" default="0" label="Show wind" description="PARAMWIND">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="hum" type="radio" default="0" label="Show humidity" description="PARAMHUM">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="dew" type="radio" default="0" label="Show Dewpoint" description="PARAMDEW">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="high" type="radio" default="0" label="Show High temperature" description="PARAMHIGH">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="low" type="radio" default="0" label="Show Low temperature" description="PARAMLOG">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="high-low" type="radio" default="0" label="Show High/Low temperature" description="PARAMHIGHLOW">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="idname" type="text" default="" label="Module ID suffix" description="PARAMIDNAME" />
+	</params>
+</install>

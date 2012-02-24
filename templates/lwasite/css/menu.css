@@ -1,0 +1,113 @@
+.transMenu {
+ position:absolute ; 
+ overflow:hidden; 
+ left:-1000px; 
+ top:-1000px; 
+}
+.transMenu .content {
+ position:absolute  ; 
+}
+.transMenu .items {
+ border: 0px solid #FF6600 ; 
+ position:relative ; 
+ left:0px; top:0px; 
+ z-index:2; 
+}
+.transMenu  td
+{
+ padding: 5px 5px 5px 5px !important;  
+ font-size: 12px !important ; 
+ font-family: Arial, Helvetica, sans-serif !important ; 
+ text-align: left !important ; 
+ font-weight: bold !important ; 
+ color: #FFFFFF !important ; 
+} 
+#subwrap 
+{ 
+ text-align: left ; 
+}
+.transMenu  .item.hover td
+{ 
+ color: #FFFFFF !important ; 
+}
+.transMenu .item { 
+ text-decoration: none ; 
+ cursor:pointer; 
+ cursor:hand; 
+}
+.transMenu .background {
+background-image:none; background-color: #6b1111 !important ; 
+ position:absolute ; 
+ left:0px; top:0px; 
+ z-index:1; 
+ opacity:0.85; 
+ filter:alpha(opacity=85) 
+}
+.transMenu .shadowRight { 
+ position:absolute ; 
+ z-index:3; 
+ top:-3000px; width:2px; 
+ opacity:0.85; 
+ filter:alpha(opacity=85)
+}
+.transMenu .shadowBottom { 
+ position:absolute ; 
+ z-index:1; 
+ left:-3000px; height:2px; 
+ opacity:0.85; 
+ filter:alpha(opacity=85)
+}
+.transMenu .item.hover {
+background-image:none; background-color: #6b1111 !important ; 
+}
+.transMenu .item img { 
+ margin-left:10px !important ; 
+}
+table.menu {
+ top: 10px; 
+ left: 0px; 
+ position:relative ; 
+ margin:0px !important ; 
+ border: 0px none  ; 
+ z-index: 1; 
+}
+table.menu a{
+ margin:0px !important ; 
+ padding: 5px 5px 5px 5px  !important ; 
+ display:block !important; 
+ position:relative !important ; 
+}
+div.menu a,
+div.menu a:visited,
+div.menu a:link {
+ width:100px; 
+ height:15px; 
+ font-size: 14px !important ; 
+ font-family: Arial, Helvetica, sans-serif !important ; 
+ text-align: left !important ; 
+ font-weight: bold !important ; 
+ color: #FFFFFF !important ; 
+ text-decoration: none !important ; 
+ margin-bottom:0px !important ; 
+ display:block !important; 
+ white-space:nowrap ; 
+}
+div.menu td {
+ border-right: 0px none  ; 
+ border-top: 0px none  ; 
+ border-left: 0px none  ; 
+background-image:none;} 
+div.menu td.last {
+ border-bottom: 0px none  ; 
+} 
+#trans-active a{
+ color: #FFFFFF !important ; 
+background-image:none; background-color: #6b1111 !important ; 
+} 
+#menu a.hover   { 
+background-image:none; color: #FFFFFF !important ; 
+ background-color: #6b1111 !important ; 
+}
+#menu span {
+ display:none; 
+}

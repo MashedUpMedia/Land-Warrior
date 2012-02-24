@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="module">
+	<name>googleWeather</name>
+	<author>computer-daten-netze:feenders</author>
+	<creationDate>July 2009</creationDate>
+	<copyright>(C) feenders.de. All Rights Reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>post@feenders.de</authorEmail>
+	<authorUrl>www.feenders.de</authorUrl>
+	<version>1.1</version>
+	<description>This module displays a short weather forecast at a module position.</description>
+	<files>
+		<filename module="mod_googleWeather">mod_googleWeather.php</filename>
+		<filename>helper.php</filename>
+		<filename>README</filename>
+		<folder>icons</folder>
+		<folder>simpleXML</folder>
+	</files>
+	<params>
+		<param name="weather_location" type="text" default="berlin" size="30" label="Location" description="Location (town,county) of the weather data" />
+		<param name="weather_language" type="text" default="en" size="3" label="Language" description="Language for the weather request" ></param>
+		<param name="use_page_language" type="radio" default="1" label="Autodetect language" description="Try to detect site/page language-context">
+		  	<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="show_icon" type="radio" default="1" label="Show Icon" description="Display ICON image beside the text">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="img_align" type="list" default="right" label="Align Icon" description="Align ICON to the following orientation">
+			<option value="left">Left</option>
+			<option value="right">Right</option>
+			<option value="none">None</option>
+		</param>
+		<param name="temp_unit" type="list" default="both" label="Temp. Unit" description="What type of temperature unit in the current conditions should be displayed">
+			<option value="c">Celsius</option>
+			<option value="f">Fahrenheit</option>
+			<option value="both">Both units</option>
+		</param>
+		<param name="show_forecast" type="radio" default="1" label="Show Forecast" description="Display a 3 Day forcast below the currrent conditions">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="show_errors" type="radio" default="1" label="Show Error MSGs" description="Show Error if the XML can not be loaded.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+	</params>
+</install>

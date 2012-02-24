@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?> <install version="1.5" type="template">       	<name>lwasite</name>       	<creationDate>May 2009</creationDate>       	<author>Jack Schofield and Debbie Keys</author>       	<copyright>Mad Cat Digital</copyright>       	<authorEmail>support@madcatdigital.co.uk</authorEmail>       	<authorUrl>www.madcatdigital.co.uk</authorUrl>       	<version>1.0</version>       	<description>Mad Cat Template</description>       	<files>             		<filename>index.php</filename>             		<filename>templateDetails.xml</filename> 		<filename>ieonly.css</filename>		<filename>ie7only.css</filename>	</files>	<images>	</images>		<positions>	<position>user1</position>             	<position>user2</position>
+	<position>user3</position>
+	<position>user4</position>
+	<position>user5</position>	<position>top</position>             	   	<position>banner</position>          	    	<position>footer</position>
+	<position>header</position>	</positions>          	<params>	</params> </install>

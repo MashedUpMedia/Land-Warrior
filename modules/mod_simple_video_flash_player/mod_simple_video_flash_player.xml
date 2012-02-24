@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5">
+	<name>Simple Video Flash Player Module</name>
+	<author>www.time2online.de</author>
+	<creationDate>06/16/2009</creationDate>
+	<copyright>time2online</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>info@time2online.de</authorEmail>
+	<authorUrl>http://www.time2online.de</authorUrl>
+	<version>1.6</version>
+	<description>
+	<![CDATA[
+	<p># Simple Video Flash Player Module #</p>
+	<p>For download, demo and documentation use http://www.time2online.de.</p>
+
+	<p># JW Player License #</p>
+	<p>Below you see a simple embedded example of the JW Player!</p>
+	<p>Licensing: The player is licensed under a http://creativecommons.org/licenses/by-nc-sa/2.0/ Creative Commons License. It allows you to use, modify and redistribute the script, but only for noncommercial purposes.</p>
+	
+	<p>For corporate use, http://www.longtailvideo.com/players/order Order commercial licenses please apply for a commercial license.</p>
+	]]>
+	</description>
+	<files>
+	    <filename module="mod_simple_video_flash_player">index.html</filename>
+		<filename module="mod_simple_video_flash_player">mod_simple_video_flash_player.php</filename>
+		<filename module="mod_simple_video_flash_player">demo.flv</filename>
+		<filename module="mod_simple_video_flash_player">jwplayer.swf</filename>
+		<filename module="mod_simple_video_flash_player">miniplayer.swf</filename>
+		<filename module="mod_simple_video_flash_player">yt.swf</filename>
+		<filename module="mod_simple_video_flash_player">swfobject.js</filename>
+	</files>
+	<params>
+	    <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+			<param name="player_variant" type="list" default="jwplayer" label="Player" description="choose jw player, mini player or youtube player (default value is jw player)">
+				<option value="jwplayer">JW Player</option>
+				<option value="miniplayer">Mini Player</option>
+				<option value="yt">Youtube Player</option>
+			</param>
+			<param name="height" type="text" default="200" label="Video Height" description="the height of the flash player (default value is 200)" />
+			<param name="width" type="text" default="200" label="Video Width" description="the width of the flash player (default value is 200)" />
+			<param name="version" type="text" default="6" label="Flash Version" description="edit the minimum version of flash player (default value is 6)" />
+			<param name="count" type="text" default="1" label="Flash Player ID" description="edit video flash player id" />
+			<param name="controlbar" type="radio" default="0" label="Controlbar" description="position of the controlbar (default value is bottom)" >
+				<option value="1">Over</option>
+				<option value="0">Bottom</option>
+			</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+			<param name="video_url" type="text" default="demo.flv" label="Single Video URL" description="edit flash video url (for example http://content.bitsontherun.com/videos/3ta6fhJQ.flv)" />
+			<param name="preview_url" type="text" default="" label="Preview Image URL" description="edit preview image url (for example http://content.bitsontherun.com/thumbs/qyehIiBT.jpg)" />
+			<param name="fallbackimage_url" type="text" default="" label="Fallback Image URL" description="edit fallback image url (for example http://content.bitsontherun.com/thumbs/qyehIiBT.jpg)" />
+			<param name="link_url" type="text" default="" label="Link URL" description="edit link to an external site (for example http://www.joomla.org)" />	
+			<param name="logo_url" type="text" default="" label="Logo URL" description="edit logo image url (for example http://www.longtailvideo.com/jw/upload/longtail.png)" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+			<param name="playlist_url" type="text" default="" label="Multi Playlist URL" description="edit url for the rss file to play (for example http://www.longtailvideo.com/jw/upload/mrss.xml)" />
+			<param name="playlist_position" type="list" default="over" label="Playlist Position" description="position of the playlist (default value is none)" >
+				<option value="">None</option>
+				<option value="over">Over</option>
+				<option value="right">Right</option>
+				<option value="bottom">Bottom</option>
+			</param>
+			<param name="playlist_size" type="text" default="180" label="Playlistsize" description="edit height or width of the playlist (default is 180)" />	
+			<param name="skin_url" type="text" default="" label="Skin URL" description="edit link to an skin file (for example http://www.longtailvideo.com/jw/upload/stylish.swf)" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+			<param name="autostart" type="radio" default="0" label="Autostart" description="automatically start playing (default value is no)" >
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+			<param name="playlist_repeat" type="list" default="" label="Repeat" description="continously repeat playback (default value is no)" >
+				<option value="">No</option>
+				<option value="repeat=always">Always</option>
+				<option value="repeat=list">List</option>
+			</param>
+			<param name="playlist_shuffle" type="list" default="" label="Shuffle" description="shuffle playlist order (default value is no)" >
+				<option value="">No</option>
+				<option value="shuffle=true">Shuffle</option>
+			</param>	
+		<param name="@spacer" type="spacer" default="" label="" description="" />	
+			<param name="plugin_id" type="text" default="" label="Plugin ID" description="edit ids of plugin to load (for example revolt)" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+	</params>
+</install>

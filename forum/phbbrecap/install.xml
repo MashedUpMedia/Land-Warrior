@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+		<?xml-stylesheet type="text/xsl" href="modx.prosilver.en.xsl"?>
+		<!--
+		$Id: install.xml 8 2009-02-11 06:39:14Z xhotshotx $
+		For security purposes, please check: http://www.phpbb.com/mods/ for the latest version of this MOD. Although MODs are checked before being allowed in the MODs Database there is no guarantee that there are no security problems within the MOD. No support will be given for MODs not found within the MODs Database which can be found at http://www.phpbb.com/mods/-->
+<mod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.phpbb.com/mods/xml/modx-1.2.1.xsd">
+    <header>
+	   <license>http://opensource.org/licenses/gpl-license.php GNU General Public License v2</license>
+            <title lang="en">phpBB reCAPTCHA</title>
+                <description lang="en">Requires PHP versions greater than 5.1.0.
+                
+                Replaces phpBB CAPTCHA's system and uses recaptcha.net API system to generate more random and secure CAPTCHA's. For more information on the reCAPTCHA system, please vist http://recaptcha.net/learnmore.html.
+                </description>
+                	<author-notes lang="en">Do not install this MOD if you dont no have PHP version than 5.1.0 or greater.</author-notes>
+				<author-group>
+					<author>
+						<realname>Michael Williams</realname>
+						<email>mtotheikle@gmail.com</email>
+						<username>mtotheikle</username>
+						<homepage>http://startrekguide.com></homepage>
+					</author>
+				</author-group>
+				<mod-version>1.0.0 B1</mod-version>
+				<installation>
+					<level>intermediate</level>
+					<time>600</time>
+					<target-version>3.0.4
+					</target-version>
+				</installation>
+                <history>
+                    <entry>
+						<date>2009-8-2</date>
+						<rev-version>1.0.0 B1</rev-version>
+						<changelog lang="en">
+							<change>First Beta Release</change>
+						</changelog>
+            		</entry>  
+            		<entry>
+						<date>2009-10-2</date>
+						<rev-version>1.0.0 B2</rev-version>
+						<changelog lang="en">
+							<change>Fixed install files.</change>
+						</changelog>
+            		</entry>
+            	</history>
+		</header>
+		
+		<action-group>
+		<copy>
+			<file from="root/includes/recaptcha/recapthca_lib.php" to="includes/recaptcha/recapthca_lib.php"></file>
+			<file from="root/language/en/mods/recaptcha.php" to="language/en/mods/recaptcha.php"></file>
+			<file from="root/styles/prosilver/template/recaptcha.html" to="styles/prosilver/template/recaptcha.html"></file>
+		</copy>
+		<open src="includes/ucp/ucp_register.php">
+				<edit>
+				<find><![CDATA[		// Check and initialize some variables if needed
+		if ($submit)]]></find>
+				<action type="before-add"><![CDATA[		/**
+		 * phpBB reCAPTCHA MOD
+		 * By: Michael Williams (mtotheikle)
+		 * 
+		 * Get reCAPTCHA files and initiate our class.
+		 */
+		include($phpbb_root_path . 'includes/recaptcha/recapthca_lib.' . $phpEx);
+		$recaptcha = new recapthca_lib();	]]></action>
+            </edit>
+            <edit>
+				<find><![CDATA[			// Visual Confirmation handling
+			$wrong_confirm = false;]]></find>
+				<action type="before-add"><![CDATA[			/**
+			 * phpBB reCAPTCHA MOD
+			 * By: Michael Williams (mtotheikle)
+			 * 
+			 * Check answer to reCAPTCHA.
+			 */
+			$recaptcha->check_answer($user->ip, request_var('recaptcha_challenge_field', ''), request_var('recaptcha_response_field', ''), $error);]]></action>
+            </edit>
+            <edit>
+				<find><![CDATA[		// Visual Confirmation - Show images]]></find>
+				<action type="before-add"><![CDATA[		/**
+		 * phpBB reCAPTCHA MOD
+		 * By: Michael Williams (mtotheikle)
+		 * 
+		 * Show reCAPTCHA image.
+		 */		
+		$recaptcha->get_html();]]></action>
+            </edit>
+        </open>
+        <open src="styles/prosilver/template/ucp_register.html">
+			<edit>
+				<find><![CDATA[<!-- IF S_COPPA -->
+	<span class="corners-bottom"><span></span></span></div>]]></find>
+				<action type="before-add"><![CDATA[	<!-- INCLUDE recaptcha.html -->
+				
+]]></action>
+            </edit>
+        </open>
+        <diy-instructions lang="en">Open includes/recaptcha/recaptcha.php and enter your private key and public key from the recaptcha site. Located around lines 29-32. Place your key inbetween the two single quotes.</diy-instructions>
+	</action-group>
+</mod>

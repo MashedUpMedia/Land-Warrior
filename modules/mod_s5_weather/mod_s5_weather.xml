@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<install type="module" version="1.5.0">
+	<name>S5 Weather Module</name>
+	<author>Shape 5</author>
+	<creationDate>Janurary 2009</creationDate>
+	<copyright>(C) 2009 Shape 5 LLC</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>contact@shape5.com</authorEmail>
+	<authorUrl>www.shape5.com</authorUrl>
+	<version>1.0</version>
+	<description>This module pulls the weather from Yahoo.com based on a zip code entered into the admin side of this module.
+	          
+				 Visit us at: www.shape5.com
+    </description>
+	<files>
+		<filename module="mod_s5_weather">mod_s5_weather.php</filename>
+		<filename>weather.class.php</filename>
+		<filename>s5_weather/0.png</filename>
+		<filename>s5_weather/1.png</filename>
+		<filename>s5_weather/2.png</filename>
+		<filename>s5_weather/3.png</filename>
+		<filename>s5_weather/4.png</filename>
+		<filename>s5_weather/5.png</filename>
+		<filename>s5_weather/6.png</filename>
+		<filename>s5_weather/7.png</filename>
+		<filename>s5_weather/8.png</filename>
+		<filename>s5_weather/9.png</filename>
+		<filename>s5_weather/10.png</filename>
+		<filename>s5_weather/11.png</filename>
+		<filename>s5_weather/12.png</filename>
+		<filename>s5_weather/13.png</filename>
+		<filename>s5_weather/14.png</filename>
+		<filename>s5_weather/15.png</filename>
+		<filename>s5_weather/16.png</filename>
+		<filename>s5_weather/17.png</filename>
+		<filename>s5_weather/18.png</filename>
+		<filename>s5_weather/19.png</filename>
+		<filename>s5_weather/20.png</filename>
+		<filename>s5_weather/21.png</filename>
+		<filename>s5_weather/22.png</filename>
+		<filename>s5_weather/23.png</filename>
+		<filename>s5_weather/24.png</filename>
+		<filename>s5_weather/25.png</filename>
+		<filename>s5_weather/26.png</filename>
+		<filename>s5_weather/27.png</filename>
+		<filename>s5_weather/28.png</filename>
+		<filename>s5_weather/29.png</filename>
+		<filename>s5_weather/30.png</filename>
+		<filename>s5_weather/31.png</filename>
+		<filename>s5_weather/32.png</filename>
+		<filename>s5_weather/33.png</filename>
+		<filename>s5_weather/34.png</filename>
+		<filename>s5_weather/35.png</filename>
+		<filename>s5_weather/36.png</filename>
+		<filename>s5_weather/37d.png</filename>
+		<filename>s5_weather/37n.png</filename>
+		<filename>s5_weather/38.png</filename>
+		<filename>s5_weather/39.png</filename>
+		<filename>s5_weather/40.png</filename>
+		<filename>s5_weather/41.png</filename>
+		<filename>s5_weather/42.png</filename>
+		<filename>s5_weather/43.png</filename>
+		<filename>s5_weather/44d.png</filename>
+		<filename>s5_weather/44n.png</filename>
+		<filename>s5_weather/45.png</filename>
+		<filename>s5_weather/46.png</filename>
+		<filename>s5_weather/47d.png</filename>
+		<filename>s5_weather/47n.png</filename>
+		<filename>s5_weather/3200.png</filename>
+		<filename>s5_weather/s5_weather_backrepeat.jpg</filename>
+		<filename>s5_weather/s5_weather_bl.jpg</filename>
+		<filename>s5_weather/s5_weather_bmiddle.jpg</filename>
+		<filename>s5_weather/s5_weather_br.jpg</filename>
+		<filename>s5_weather/s5_weather_rightm.jpg</filename>
+		<filename>s5_weather/s5_weather_rm.jpg</filename>
+		<filename>s5_weather/s5_weather_tl.jpg</filename>
+		<filename>s5_weather/s5_weather_tmiddle.jpg</filename>
+		<filename>s5_weather/s5_weather_tr.jpg</filename>
+		<filename>s5_weather/style.css</filename>
+   	</files>
+
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />
+		<param name="textif" type="textarea" cols="40" rows="5" default="" label="Introduction text" description="Enter some instructions here."></param>
+		<param name="zipcode" type="text" default="" label="Zip Code" description="Enter your zip code here."></param>
+		<param name="s5_tempscale" type="list" default="f" label="Choose your temperature scale" description="Select either Fahrenheit or Celsius for you temperature scale." >
+				<option value="f">Fahrenheit</option>
+				<option value="c">Celsius</option>
+		</param>
+				
+	</params>
+</install>

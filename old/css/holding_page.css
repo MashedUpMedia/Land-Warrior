@@ -1,0 +1,34 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+body {
+text-align:center;
+background-color:#ffffff; 
+}
+
+#website_wrap {
+width:530px;
+text-align:left;
+}
+
+#holding {
+margin-top: 25px;
+margin-bottom: 10px;
+}
+
+h1 {
+font-family:"Lucida Console, Monaco5, monospace";
+color:#470b0b;
+font-size:1em;
+}
+p{
+font-family:"Lucida Console, Monaco5, monospace";
+color:#470b0b;
+font-size:0.75em;
+}
+
+img{
+border-style:none;
+}

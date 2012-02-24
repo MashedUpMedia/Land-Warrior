@@ -1,0 +1,189 @@
+﻿.weatherbox {
+  border              : 1px solid #4bbde8;
+  background-color    : #f2f4f1;
+  width				  : 100%;  
+}
+
+.weathertop {  
+  width               : 100%;
+  text-align          : left;
+  border-bottom       : 1px solid #38AAD4;
+  background-image    : url("../imgs/yr_topbg.png");
+  background-position : center left;
+  background-repeat   : repeat-x;
+  height              : 40px;
+  padding-top		  : 10px;
+  
+}
+.weatherCountry
+{
+	font-size:9px;
+	padding-left: 6px;
+}
+
+.weathertop a:link,
+.weathertop a:active,
+.weathertop a:focus,
+.weathertop a:visited {
+  display             : block;
+  width               : 100%;
+  height              : auto;
+  line-height         : 25px;
+  text-decoration     : none;
+  text-align          : right;
+}
+
+.weathersearch {
+  padding-top		  :	3px;
+  display             : block;
+  height		      : 28px;
+  width				  : auto;
+  border-bottom       : 1px solid #1C4555;
+  background-image    : url("../imgs/yr_searchbg.png");
+  background-position : center left;
+  background-repeat   : repeat-x;  
+  
+}
+
+.weathersearch label {
+  font-weight         : bold;
+  dispay              : block;
+  line-height         : 20px;
+  margin              : 0 0 0 6px;
+}
+
+.weathersearch input#querybutton {
+  background-color    : Grey;
+  width               : 50px;
+  height              : 22px;
+  line-height         : 22px;
+  border              : 0;
+  color               : #536a7e;
+  text-align          : center;
+  text-transform      : uppercase;
+  font-size           : 12px;
+  font-weight         : bold;
+  margin              : 0 6px 0 4px;
+  cursor              : pointer;
+  float               : left;
+}
+
+.weathersearch input#querybutton:hover {
+  color: #212d2c;
+  background-color: inherit;
+}
+
+.weathersearch input#place {
+  float               : left;
+  width               : 80px;
+  height              : 20px;
+  line-height         : 20px;
+  border              : 1px solid #4bbde8;
+  margin              : 0 0 0 6px;
+}
+
+.weatherCurrent
+{
+	background-color    : #E9E9E9;
+	height 				: 130px;
+	width				: 100%;
+}
+
+.weathercurrentLocation
+{
+	width		: 100%;
+	font-size	: 18pt;
+	text-align	: center;
+	padding-left: 6px;
+}
+.weatherCurrentText
+{
+	font-weight         : normal;
+	font-size 			: 8pt;	
+	width				: auto;
+	background-color    : #E9E9E9;
+}
+
+.weatherCurrentDay
+{
+	font-weight         : Bold;
+	font-size 			: 11pt;	
+	width				: auto;
+	text-align			: left;
+}
+
+.weatherCurrentDeg
+{
+	font-weight         : Bold;
+	font-size 			: 14pt;	
+	width				: auto;
+	text-align			: left;
+	white-space			: nowrap;
+	text-align			: center;
+	vertical-align		: middle;	
+}
+
+.weatherCurrentImg, .weatherCurrentWind
+{
+	text-align			: center;
+	font-size 			: 7pt;
+}
+.weathercurrentInfo
+{
+	font-weight         : normal;
+	font-size 			: 8pt;	
+	width				: auto;
+}
+
+.weatherTable
+{
+	width				:100%;
+
+}
+
+.weatherForecastTD
+{
+	font-weight         : normal;
+	font-size 			: 7.5pt;
+	vertical-align		: middle;
+	
+}
+.weatherTableTR
+{
+    background-image    : url("../imgs/yr_forecastTabHeader.png");
+    background-position : 0 0;
+    background-repeat   : repeat-x;  	
+    width 			    : 100%;
+}
+
+.weatherTableTD
+{
+	font-size         : 8pt;
+	height			  : 45px;
+	border-bottom	  : 1px solid #fff;
+	width			  : 38px;
+}
+
+.weatherTableTH
+{
+	font-size         : 8pt;
+	color			  : White;
+	font-weight		  : Normal;
+	height			  : 22px;
+}
+
+.weatherGeoDataTD
+{
+	font-size         : 7pt;
+	font-weight		  : Normal;
+	text-align		  : right;
+}
+.forecast-box {
+	width: 100%;
+	border: 2px solid #ccd2ce;
+	overflow: hidden;
+	margin: 0px 6px 6px 0px;
+	padding: 2px;
+	float: left;
+	height:100px;
+}

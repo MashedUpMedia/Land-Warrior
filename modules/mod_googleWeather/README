@@ -1,0 +1,46 @@
+﻿Google Weather module for Joomla 1.5
+by computer - daten -netze | feeenders
+http://www.feenders.de
+
+/** INSTALLATION */
+-------------------
+* Install the "googleWeather Module" with the Joomla installation manager 
+  as administrator in the backend.
+* Create a new "googleWeather Module".
+* Set module options like language or icons and location.
+
+/** LIMIMITATIONS */
+-------------------
+* The mudule must get an xml-file from google. 
+* Therefore "allow-url-fopen" should be enabled in the PHP configuration. (php.ini)
+* Alternatively you can install the php-curl extention.
+
+If you errors, open the customer-package-configuration of your provider.
+There is often a possibility to switch from PHP4 to PHP5 an change values like
+"allow-url-fopen".
+
+/** USAGE */
+------------
+Set the Wather-location in module-configuration
+ * singapore
+ * berlin,germany
+ * weather los angeles
+
+* Customize layout by using "div.MOD_weather" and "img.MOD_weather" in your
+  templates.css-file.
+
+Example: 
+	div.mod_weather {
+		width: 300px;
+		border: 1px solid black;
+		background: #E0E5EF;
+		padding: 5px;
+		font-size: 10px;
+	}
+
+	img.mod_weather {
+		margin: 0 0 0 20px;
+		float: right;
+	}
+
+
