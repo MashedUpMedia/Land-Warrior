@@ -33,7 +33,7 @@ class JConfig {
 	var $dbtype = 'mysql';
 	var $host = 'localhost';
 	var $user = 'admin';
-	var $db = 'lwforum';
+	var $db = 'lwasite';
 	var $dbprefix = '';
 	var $mailer = 'mail';
 	var $mailfrom = 'info@madcatdigital.co.uk';
